@@ -24,7 +24,7 @@ theme.fg_focus = "#ffffff"
 theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
 
-theme.useless_gap = dpi(8)
+theme.useless_gap = dpi(4)
 theme.border_width = dpi(0)
 theme.border_normal = "#000000"
 theme.border_focus = "#535d6c"
@@ -123,5 +123,3 @@ theme.awesome_icon = theme_assets.awesome_icon(theme.menu_height, theme.bg_focus
 theme.icon_theme = Arc
 
 return theme
-
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
