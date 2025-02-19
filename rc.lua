@@ -553,8 +553,8 @@ awful.rules.rules = {
 		},
 	},
 
-	-- Add titlebars to normal clients and dialogs
-	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
+	-- Add titlebars to dialogs
+	{ rule_any = { type = { "dialog" } }, properties = { titlebars_enabled = true } },
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
 	-- { rule = { class = "Firefox" },
@@ -606,7 +606,7 @@ client.connect_signal("request::titlebars", function(c)
 		{ -- Right
 			awful.titlebar.widget.floatingbutton(c),
 			-- awful.titlebar.widget.maximizedbutton(c),
-			awful.titlebar.widget.stickybutton(c),
+			-- awful.titlebar.widget.stickybutton(c),
 			-- awful.titlebar.widget.ontopbutton(c),
 			awful.titlebar.widget.closebutton(c),
 			layout = wibox.layout.fixed.horizontal(),
@@ -628,4 +628,4 @@ client.connect_signal("unfocus", function(c)
 end)
 -- }}}
 
-awful.spawn.with_shell("picom")
+-- awful.spawn.with_shell("picom")
